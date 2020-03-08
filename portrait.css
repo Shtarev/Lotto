@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+@font-face {  
+font-family: "Cooper_Black";
+src: url("font/coopbl.ttf");
+} 
+body {
+    background-color: maroon;
+    font-family: "Cooper_Black";
+}
+#box {
+    position: absolute;
+    top: 10vw;
+    left: 5vw;
+    outline: red 1px solid;
+    width: 90vw;
+    height: auto;
+    background-color: rgba(192, 192, 192, 0.9);
+    z-index: 1;
+}
+#lotterielos {
+    position: absolute;
+    top: 11.2vw;
+    left: 6.2vw;
+    width: 88vw;
+    height: 88vw;
+}
+#dummy {
+    margin-top: 100%;
+}
+#bleiben {
+    display: inline;
+    margin-left: 5vw;
+    font-family: "Cooper_Black";
+    font-size: 3vw;
+    color: goldenrod;
+}
+#time {
+    display: none;
+    margin-left: 5vw;
+    font-family: "Cooper_Black";
+    font-size: 3vw;
+    color: goldenrod;
+}
+#auswahl {
+    position: absolute;
+    top: 103vw;
+    left: 5vw;
+    width: 90vw;
+    height: 13.6vw;
+    padding-left: 1.5vw;
+    display: none;
+}
+#zeitEnd {
+    position: absolute;
+    top: 123vw;
+    left: 5vw;
+    width: 90vw;
+    font-family: "Cooper_Black";
+    font-size: 3vw;
+    text-align: center;
+    color: goldenrod;
+}
+.button {
+    position: absolute;
+    width: 90vw;
+    height: 13.6vw;
+    color: #777674;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+    user-select: none;
+    padding: 0em 2em;
+    outline: none;
+    border-radius: 3px / 100%;
+    background-image:
+    linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+    linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+    linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+    linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+    linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+    linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+    background-color: maroon;
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+    display: none;
+    font-family: "Cooper_Black";
+    font-size: 5vw;
+} 
+.button:hover {
+    transition: .5s linear;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+#button {
+    top: 103vw;
+    left: 5vw;
+}
+#button:active {
+    top: 103.1vw;
+}
+#nochMal {
+    top: 150vw;
+    left: 5vw;
+}
+#nochMal:active {
+    top: 150.1vw;
+}
+.row {
+    position: relative;
+    width: 88.5vw;
+    height: 13.6vw;
+}
+.taste {
+    position: relative;
+    outline: maroon 3px solid;
+    width: 13.6vw;
+    height: 13.6vw;
+    float: left;
+    font-size: 9vw;
+    text-align: center;
+    line-height: 13vw;
+    padding: 0.5vw;
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 2;
+    font-family: "Cooper_Black";
+    background-size: cover;
+}
+
+.kugel1, .kugel2, .kugel3, .kugel4, .kugel5, .kugel6, .kugel7, .kugel8, .kugel9, .kugel10, .kugel11, .kugel12, .kugel13, .kugel14, .kugel15, .kugel16, .kugel17, .kugel18, .kugel19, .kugel20, .kugel21, .kugel22, .kugel23, .kugel24, .kugel25, .kugel26, .kugel27, .kugel28, .kugel29, .kugel30, .kugel31, .kugel32, .kugel33, .kugel34, .kugel35, .kugel36 {
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    border: brown 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 12vw;
+    transition: 3s;
+	-webkit-transition: 3s;
+	-ms-transition: 3s;
+    transition-timing-function: bezier(0, 0, 0.58, 1);
+    z-index: 4;
+    font-family: "Cooper_Black";
+    font-size: 6.5vw;
+}
+.kugel1 { background-color: #FFCCCC; top: 120vw; left: 5vw;}
+.kugel2 { background-color: #FFCC66; top: 120vw; left: 20.8vw;}
+.kugel3 { background-color: #FF6666; top: 120vw; left: 36.6vw;}
+.kugel4 { background-color: #CC6600; top: 120vw; left: 52.4vw;}
+.kugel5 { background-color: #FF0000; top: 120vw; left: 68.2vw;}
+.kugel6 { background-color: #CC0000; top: 120vw; left: 84vw;}
+
+.kugel7 { background-color: #CC3300; top: 125vw; left: 5vw;}
+.kugel8 { background-color: #990000; top: 125vw; left: 20.8vw;}
+.kugel9 { background-color: #996633; top: 125vw; left: 36.6vw;}
+.kugel10 { background-color: #336600; top: 125vw; left: 52.4vw;}
+.kugel11 { background-color: #009900; top: 125vw; left: 68.2vw;}
+.kugel12 { background-color: #99CC00; top: 125vw; left: 84vw;}
+
+.kugel13 { background-color: #33CC33; top: 130vw; left: 5vw;}
+.kugel14 { background-color: #99FF33; top: 130vw; left: 20.8vw;}
+.kugel15 { background-color: #99FF99; top: 130vw; left: 36.6vw;}
+.kugel16 { background-color: #CCFFCC; top: 130vw; left: 52.4vw;}
+.kugel17 { background-color: #FFFFCC; top: 130vw; left: 68.2vw;}
+.kugel18 { background-color: #FFFB91; top: 130vw; left: 84vw;}
+
+.kugel19 { background-color: #FFCC00; top: 135vw; left: 5vw;}
+.kugel20 { background-color: #FFFF00; top: 135vw; left: 20.8vw;}
+.kugel21 { background-color: #00FF00; top: 135vw; left: 36.6vw;}
+.kugel22 { background-color: #66FF99; top: 135vw; left: 52.4vw;}
+.kugel23 { background-color: #66FFFF; top: 135vw; left: 68.2vw;}
+.kugel24 { background-color: #00FFCC; top: 135vw; left: 84vw;}
+
+.kugel25 { background-color: #33CCCC; top: 140vw; left: 5vw;}
+.kugel26 { background-color: #00CCFF; top: 140vw; left: 20.8vw;}
+.kugel27 { background-color: #FF8A50; top: 140vw; left: 36.6vw;}
+.kugel28 { background-color: #0099FF; top: 140vw; left: 52.4vw;}
+.kugel29 { background-color: #0066FF; top: 140vw; left: 68.2vw;}
+.kugel30 { background-color: #6666FF; top: 140vw; left: 84vw;}
+
+.kugel31 { background-color: #9966FF; top: 145vw; left: 5vw;}
+.kugel32 { background-color: #9933FF; top: 145vw; left: 20.8vw;}
+.kugel33 { background-color: #9900CC; top: 145vw; left: 36.6vw;}
+.kugel34 { background-color: #CC00CC; top: 145vw; left: 52.4vw;}
+.kugel35 { background-color: #FF33CC; top: 145vw; left: 68.2vw;}
+.kugel36 { background-color: #FF99FF; top: 145vw; left: 84vw;}
+
+@keyframes anim {    
+     from { top: none; }    
+     to { top: 87vw; }    
+} 
+@-moz-keyframes anim {    
+     from { top: none; }    
+     to { top: 87vw; }    
+} 
+@-webkit-keyframes anim {    
+     from { top: none; }    
+     to { top: 87vw; }    
+}
+footer {
+    display: none;
+}

@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+@font-face {  
+font-family: "Cooper_Black";
+src: url("font/coopbl.ttf");
+} 
+body {
+    background-color: maroon;
+    font-family: "Cooper_Black";
+}
+#box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    outline: red 1px solid;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(192, 192, 192, 0.9);
+    z-index: 1;
+}
+#bleiben {
+    display: inline;
+    margin-left: 50px;
+    font-family: "Cooper_Black";
+    font-size: 20px;
+    color: goldenrod;
+}
+#time {
+    display: none;
+    margin-left: 50px;
+    font-family: "Cooper_Black";
+    font-size: 20px;
+    color: goldenrod;
+}
+#auswahl {
+    position: absolute;
+    top: 570px;
+    left: 50px;
+    width: 500px;
+    height: 50px;
+    padding-left: 10px;
+    display: none;
+}
+#lotterielos {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 480px;
+    height: 480px;
+}
+#zeitEnd {
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    font-family: "Cooper_Black";
+    font-size: 30px;
+    color: goldenrod;
+}
+.button {
+    position: absolute;
+    width: 500px;
+    height: 70px;
+    color: #777674;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+    user-select: none;
+    padding: 1em 2em;
+    outline: none;
+    border-radius: 3px / 100%;
+    background-image:
+    linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+    linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+    linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+    linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+    linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+    linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+    background-color: maroon;
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+    display: none;
+    font-family: "Cooper_Black";
+    font-size: 20px;
+    
+} 
+.button:active {
+    top: 571px;
+}
+.button:hover {
+    transition: .5s linear;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+#button {
+    top: 570px;
+    left: 50px;
+}
+#nochMal {
+    top: 50px;
+    left: 570px;
+}
+.row {
+    position: relative;
+    width: 480px;
+    height: 80px;
+}
+.taste {
+    position: relative;
+    outline: maroon 3px solid;
+    width: 70px;
+    height: 70px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+    line-height: 70px;
+    padding: 5px;
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 2;
+    font-family: "Cooper_Black";
+}
+.kugel1, .kugel2, .kugel3, .kugel4, .kugel5, .kugel6, .kugel7, .kugel8, .kugel9, .kugel10, .kugel11, .kugel12, .kugel13, .kugel14, .kugel15, .kugel16, .kugel17, .kugel18, .kugel19, .kugel20, .kugel21, .kugel22, .kugel23, .kugel24, .kugel25, .kugel26, .kugel27, .kugel28, .kugel29, .kugel30, .kugel31, .kugel32, .kugel33, .kugel34, .kugel35, .kugel36 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: brown 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transition: 3s;
+	-webkit-transition: 3s;
+	-ms-transition: 3s;
+    transition-timing-function: bezier(0, 0, 0.58, 1);
+    z-index: 4;
+    font-family: "Cooper_Black";
+    font-size: 23px;
+}
+.kugel1 { background-color: #FFCCCC; top: 200px; left: 640px;}
+.kugel2 { background-color: #FFCC66; top: 200px; left: 700px;}
+.kugel3 { background-color: #FF6666; top: 200px; left: 760px;}
+.kugel4 { background-color: #CC6600; top: 200px; left: 820px;}
+.kugel5 { background-color: #FF0000; top: 200px; left: 880px;}
+.kugel6 { background-color: #CC0000; top: 200px; left: 940px;}
+
+.kugel7 { background-color: #CC3300; top: 260px; left: 640px;}
+.kugel8 { background-color: #990000; top: 260px; left: 700px;}
+.kugel9 { background-color: #996633; top: 260px; left: 760px;}
+.kugel10 { background-color: #336600; top: 260px; left: 820px;}
+.kugel11 { background-color: #009900; top: 260px; left: 880px;}
+.kugel12 { background-color: #99CC00; top: 260px; left: 940px;}
+
+.kugel13 { background-color: #33CC33; top: 320px; left: 640px;}
+.kugel14 { background-color: #99FF33; top: 320px; left: 700px;}
+.kugel15 { background-color: #99FF99; top: 320px; left: 760px;}
+.kugel16 { background-color: #CCFFCC; top: 320px; left: 820px;}
+.kugel17 { background-color: #FFFFCC; top: 320px; left: 880px;}
+.kugel18 { background-color: #FFFB91; top: 320px; left: 940px;}
+
+.kugel19 { background-color: #FFCC00; top: 380px; left: 640px;}
+.kugel20 { background-color: #FFFF00; top: 380px; left: 700px;}
+.kugel21 { background-color: #00FF00; top: 380px; left: 760px;}
+.kugel22 { background-color: #66FF99; top: 380px; left: 820px;}
+.kugel23 { background-color: #66FFFF; top: 380px; left: 880px;}
+.kugel24 { background-color: #00FFCC; top: 380px; left: 940px;}
+
+.kugel25 { background-color: #33CCCC; top: 440px; left: 640px;}
+.kugel26 { background-color: #00CCFF; top: 440px; left: 700px;}
+.kugel27 { background-color: #FF8A50; top: 440px; left: 760px;}
+.kugel28 { background-color: #0099FF; top: 440px; left: 820px;}
+.kugel29 { background-color: #0066FF; top: 440px; left: 880px;}
+.kugel30 { background-color: #6666FF; top: 440px; left: 940px;}
+
+.kugel31 { background-color: #9966FF; top: 500px; left: 640px;}
+.kugel32 { background-color: #9933FF; top: 500px; left: 700px;}
+.kugel33 { background-color: #9900CC; top: 500px; left: 760px;}
+.kugel34 { background-color: #CC00CC; top: 500px; left: 820px;}
+.kugel35 { background-color: #FF33CC; top: 500px; left: 880px;}
+.kugel36 { background-color: #FF99FF; top: 500px; left: 940px;}
+
+@keyframes anim {    
+     from { top: none; }    
+     to { top: 490px; }    
+} 
+@-moz-keyframes anim {    
+     from { top: none; }    
+     to { top: 490px; }    
+} 
+@-webkit-keyframes anim {    
+     from { top: none; }    
+     to { top: 490px; }    
+}
+footer {
+    position: absolute;
+    bottom: 1px;
+    font-family: "Cooper_Black";
+    font-size: 10px;
+    left: 50%;  
+    transform: translate(-50%, 0);
+	color: bisque;
+}
+footer a {
+	color: bisque; 
+	text-decoration: none; 
+}
